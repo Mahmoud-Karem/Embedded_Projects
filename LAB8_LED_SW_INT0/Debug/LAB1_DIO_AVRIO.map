@@ -1,0 +1,481 @@
+Archive member included because of file (symbol)
+
+d:/embedded tools/02-avr tools/03-imt sdk/03- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+                              d:/embedded tools/02-avr tools/03-imt sdk/03- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o (exit)
+d:/embedded tools/02-avr tools/03-imt sdk/03- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+                              ./main.o (__do_copy_data)
+d:/embedded tools/02-avr tools/03-imt sdk/03- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+                              ./EXTI_program.o (__do_clear_bss)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+text             0x00000000         0x00020000         xr
+data             0x00800060         0x0000ffa0         rw !x
+eeprom           0x00810000         0x00010000         rw !x
+fuse             0x00820000         0x00000400         rw !x
+lock             0x00830000         0x00000400         rw !x
+signature        0x00840000         0x00000400         rw !x
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD d:/embedded tools/02-avr tools/03-imt sdk/03- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+LOAD ./DIO_program.o
+LOAD ./EXTI_program.o
+LOAD ./GIE_program.o
+LOAD ./LED_program.o
+LOAD ./SW_program.o
+LOAD ./main.o
+LOAD d:/embedded tools/02-avr tools/03-imt sdk/03- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a
+LOAD d:/embedded tools/02-avr tools/03-imt sdk/03- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a
+LOAD d:/embedded tools/02-avr tools/03-imt sdk/03- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a
+
+.hash
+ *(.hash)
+
+.dynsym
+ *(.dynsym)
+
+.dynstr
+ *(.dynstr)
+
+.gnu.version
+ *(.gnu.version)
+
+.gnu.version_d
+ *(.gnu.version_d)
+
+.gnu.version_r
+ *(.gnu.version_r)
+
+.rel.init
+ *(.rel.init)
+
+.rela.init
+ *(.rela.init)
+
+.rel.text
+ *(.rel.text)
+ *(.rel.text.*)
+ *(.rel.gnu.linkonce.t*)
+
+.rela.text
+ *(.rela.text)
+ *(.rela.text.*)
+ *(.rela.gnu.linkonce.t*)
+
+.rel.fini
+ *(.rel.fini)
+
+.rela.fini
+ *(.rela.fini)
+
+.rel.rodata
+ *(.rel.rodata)
+ *(.rel.rodata.*)
+ *(.rel.gnu.linkonce.r*)
+
+.rela.rodata
+ *(.rela.rodata)
+ *(.rela.rodata.*)
+ *(.rela.gnu.linkonce.r*)
+
+.rel.data
+ *(.rel.data)
+ *(.rel.data.*)
+ *(.rel.gnu.linkonce.d*)
+
+.rela.data
+ *(.rela.data)
+ *(.rela.data.*)
+ *(.rela.gnu.linkonce.d*)
+
+.rel.ctors
+ *(.rel.ctors)
+
+.rela.ctors
+ *(.rela.ctors)
+
+.rel.dtors
+ *(.rel.dtors)
+
+.rela.dtors
+ *(.rela.dtors)
+
+.rel.got
+ *(.rel.got)
+
+.rela.got
+ *(.rela.got)
+
+.rel.bss
+ *(.rel.bss)
+
+.rela.bss
+ *(.rela.bss)
+
+.rel.plt
+ *(.rel.plt)
+
+.rela.plt
+ *(.rela.plt)
+
+.text           0x00000000     0x1612
+ *(.vectors)
+ .vectors       0x00000000       0x54 d:/embedded tools/02-avr tools/03-imt sdk/03- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+                0x00000000                __vectors
+                0x00000000                __vector_default
+ *(.vectors)
+ *(.progmem.gcc*)
+ *(.progmem*)
+                0x00000054                . = ALIGN (0x2)
+                0x00000054                __trampolines_start = .
+ *(.trampolines)
+ .trampolines   0x00000054        0x0 linker stubs
+ *(.trampolines*)
+                0x00000054                __trampolines_end = .
+ *(.jumptables)
+ *(.jumptables*)
+ *(.lowtext)
+ *(.lowtext*)
+                0x00000054                __ctors_start = .
+ *(.ctors)
+                0x00000054                __ctors_end = .
+                0x00000054                __dtors_start = .
+ *(.dtors)
+                0x00000054                __dtors_end = .
+ SORT(*)(.ctors)
+ SORT(*)(.dtors)
+ *(.init0)
+ .init0         0x00000054        0x0 d:/embedded tools/02-avr tools/03-imt sdk/03- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+                0x00000054                __init
+ *(.init0)
+ *(.init1)
+ *(.init1)
+ *(.init2)
+ .init2         0x00000054        0xc d:/embedded tools/02-avr tools/03-imt sdk/03- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+ *(.init2)
+ *(.init3)
+ *(.init3)
+ *(.init4)
+ .init4         0x00000060       0x16 d:/embedded tools/02-avr tools/03-imt sdk/03- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+                0x00000060                __do_copy_data
+ .init4         0x00000076       0x10 d:/embedded tools/02-avr tools/03-imt sdk/03- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+                0x00000076                __do_clear_bss
+ *(.init4)
+ *(.init5)
+ *(.init5)
+ *(.init6)
+ *(.init6)
+ *(.init7)
+ *(.init7)
+ *(.init8)
+ *(.init8)
+ *(.init9)
+ .init9         0x00000086        0x8 d:/embedded tools/02-avr tools/03-imt sdk/03- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+ *(.init9)
+ *(.text)
+ .text          0x0000008e        0x4 d:/embedded tools/02-avr tools/03-imt sdk/03- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+                0x0000008e                __vector_12
+                0x0000008e                __bad_interrupt
+                0x0000008e                __vector_6
+                0x0000008e                __vector_11
+                0x0000008e                __vector_13
+                0x0000008e                __vector_17
+                0x0000008e                __vector_19
+                0x0000008e                __vector_7
+                0x0000008e                __vector_5
+                0x0000008e                __vector_4
+                0x0000008e                __vector_9
+                0x0000008e                __vector_15
+                0x0000008e                __vector_8
+                0x0000008e                __vector_14
+                0x0000008e                __vector_10
+                0x0000008e                __vector_16
+                0x0000008e                __vector_18
+                0x0000008e                __vector_20
+ .text          0x00000092        0x0 ./DIO_program.o
+ .text          0x00000092        0x0 ./EXTI_program.o
+ .text          0x00000092        0x0 ./GIE_program.o
+ .text          0x00000092        0x0 ./LED_program.o
+ .text          0x00000092        0x0 ./SW_program.o
+ .text          0x00000092        0x0 ./main.o
+ .text          0x00000092        0x0 d:/embedded tools/02-avr tools/03-imt sdk/03- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .text          0x00000092        0x0 d:/embedded tools/02-avr tools/03-imt sdk/03- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+ .text          0x00000092        0x0 d:/embedded tools/02-avr tools/03-imt sdk/03- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+                0x00000092                . = ALIGN (0x2)
+ *(.text.*)
+ .text.DIO_enumSetPinDirection
+                0x00000092      0x21e ./DIO_program.o
+                0x00000092                DIO_enumSetPinDirection
+ .text.DIO_enumSetPinValue
+                0x000002b0      0x21e ./DIO_program.o
+                0x000002b0                DIO_enumSetPinValue
+ .text.DIO_enumGetPinValue
+                0x000004ce      0x18a ./DIO_program.o
+                0x000004ce                DIO_enumGetPinValue
+ .text.DIO_enumTogglePinValue
+                0x00000658      0x110 ./DIO_program.o
+                0x00000658                DIO_enumTogglePinValue
+ .text.DIO_enumConnectPullup
+                0x00000768      0x2b2 ./DIO_program.o
+                0x00000768                DIO_enumConnectPullup
+ .text.DIO_enumSetPortDirection
+                0x00000a1a       0x9a ./DIO_program.o
+                0x00000a1a                DIO_enumSetPortDirection
+ .text.DIO_enumSetPortValue
+                0x00000ab4       0x9a ./DIO_program.o
+                0x00000ab4                DIO_enumSetPortValue
+ .text.DIO_enumTogglePortValue
+                0x00000b4e       0xaa ./DIO_program.o
+                0x00000b4e                DIO_enumTogglePortValue
+ .text.DIO_enumGetPortValue
+                0x00000bf8       0xae ./DIO_program.o
+                0x00000bf8                DIO_enumGetPortValue
+ .text.DIO_voidWriteHighNibbles
+                0x00000ca6       0xf8 ./DIO_program.o
+                0x00000ca6                DIO_voidWriteHighNibbles
+ .text.DIO_voidWriteLowNibbles
+                0x00000d9e       0xf6 ./DIO_program.o
+                0x00000d9e                DIO_voidWriteLowNibbles
+ .text.EXTI_voidInit
+                0x00000e94       0x2a ./EXTI_program.o
+                0x00000e94                EXTI_voidInit
+ .text.EXTI_voidSetSignalLatch
+                0x00000ebe      0x210 ./EXTI_program.o
+                0x00000ebe                EXTI_voidSetSignalLatch
+ .text.EXTI_voidDisableInterrupt
+                0x000010ce       0x54 ./EXTI_program.o
+                0x000010ce                EXTI_voidDisableInterrupt
+ .text.EXTI_voidEnableInterrupt
+                0x00001122       0x52 ./EXTI_program.o
+                0x00001122                EXTI_voidEnableInterrupt
+ .text.EXTI_voidClearFlag
+                0x00001174       0x3a ./EXTI_program.o
+                0x00001174                EXTI_voidClearFlag
+ .text.EXTI_u8GetFlag
+                0x000011ae       0x4c ./EXTI_program.o
+                0x000011ae                EXTI_u8GetFlag
+ .text.EXTI_voidSetCallBack
+                0x000011fa       0x3e ./EXTI_program.o
+                0x000011fa                EXTI_voidSetCallBack
+ .text.__vector_1
+                0x00001238       0x6c ./EXTI_program.o
+                0x00001238                __vector_1
+ .text.__vector_2
+                0x000012a4       0x6c ./EXTI_program.o
+                0x000012a4                __vector_2
+ .text.__vector_3
+                0x00001310       0x6c ./EXTI_program.o
+                0x00001310                __vector_3
+ .text.GIE_VoidEnable
+                0x0000137c       0x1c ./GIE_program.o
+                0x0000137c                GIE_VoidEnable
+ .text.GIE_VoidDisable
+                0x00001398       0x1c ./GIE_program.o
+                0x00001398                GIE_VoidDisable
+ .text.LED_voidInit
+                0x000013b4       0x2a ./LED_program.o
+                0x000013b4                LED_voidInit
+ .text.LED_voidOn
+                0x000013de       0x44 ./LED_program.o
+                0x000013de                LED_voidOn
+ .text.LED_voidOff
+                0x00001422       0x44 ./LED_program.o
+                0x00001422                LED_voidOff
+ .text.LED_voidToggle
+                0x00001466       0x28 ./LED_program.o
+                0x00001466                LED_voidToggle
+ .text.SW_voidInit
+                0x0000148e       0x3c ./SW_program.o
+                0x0000148e                SW_voidInit
+ .text.SW_u8GetPressed
+                0x000014ca       0x8a ./SW_program.o
+                0x000014ca                SW_u8GetPressed
+ .text.Func_SW1
+                0x00001554       0x1e ./main.o
+                0x00001554                Func_SW1
+ .text.Func_SW2
+                0x00001572       0x1e ./main.o
+                0x00001572                Func_SW2
+ .text.main     0x00001590       0x7e ./main.o
+                0x00001590                main
+ .text.libgcc   0x0000160e        0x0 d:/embedded tools/02-avr tools/03-imt sdk/03- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .text.libgcc   0x0000160e        0x0 d:/embedded tools/02-avr tools/03-imt sdk/03- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc   0x0000160e        0x0 d:/embedded tools/02-avr tools/03-imt sdk/03- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+                0x0000160e                . = ALIGN (0x2)
+ *(.fini9)
+ .fini9         0x0000160e        0x0 d:/embedded tools/02-avr tools/03-imt sdk/03- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+                0x0000160e                exit
+                0x0000160e                _exit
+ *(.fini9)
+ *(.fini8)
+ *(.fini8)
+ *(.fini7)
+ *(.fini7)
+ *(.fini6)
+ *(.fini6)
+ *(.fini5)
+ *(.fini5)
+ *(.fini4)
+ *(.fini4)
+ *(.fini3)
+ *(.fini3)
+ *(.fini2)
+ *(.fini2)
+ *(.fini1)
+ *(.fini1)
+ *(.fini0)
+ .fini0         0x0000160e        0x4 d:/embedded tools/02-avr tools/03-imt sdk/03- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ *(.fini0)
+                0x00001612                _etext = .
+
+.data           0x00800060        0xc load address 0x00001612
+                0x00800060                PROVIDE (__data_start, .)
+ *(.data)
+ .data          0x00800060        0x0 d:/embedded tools/02-avr tools/03-imt sdk/03- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+ .data          0x00800060        0x0 ./DIO_program.o
+ .data          0x00800060        0x0 ./EXTI_program.o
+ .data          0x00800060        0x0 ./GIE_program.o
+ .data          0x00800060        0x0 ./LED_program.o
+ .data          0x00800060        0x0 ./SW_program.o
+ .data          0x00800060        0x0 ./main.o
+ .data          0x00800060        0x0 d:/embedded tools/02-avr tools/03-imt sdk/03- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .data          0x00800060        0x0 d:/embedded tools/02-avr tools/03-imt sdk/03- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+ .data          0x00800060        0x0 d:/embedded tools/02-avr tools/03-imt sdk/03- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+ *(.data*)
+ .data.LED1     0x00800060        0x3 ./main.o
+                0x00800060                LED1
+ .data.SW1      0x00800063        0x3 ./main.o
+                0x00800063                SW1
+ .data.LED2     0x00800066        0x3 ./main.o
+                0x00800066                LED2
+ .data.SW2      0x00800069        0x3 ./main.o
+                0x00800069                SW2
+ *(.rodata)
+ *(.rodata*)
+ *(.gnu.linkonce.d*)
+                0x0080006c                . = ALIGN (0x2)
+                0x0080006c                _edata = .
+                0x0080006c                PROVIDE (__data_end, .)
+
+.bss            0x0080006c        0x6
+                0x0080006c                PROVIDE (__bss_start, .)
+ *(.bss)
+ .bss           0x0080006c        0x0 d:/embedded tools/02-avr tools/03-imt sdk/03- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+ .bss           0x0080006c        0x0 ./DIO_program.o
+ .bss           0x0080006c        0x0 ./EXTI_program.o
+ .bss           0x0080006c        0x0 ./GIE_program.o
+ .bss           0x0080006c        0x0 ./LED_program.o
+ .bss           0x0080006c        0x0 ./SW_program.o
+ .bss           0x0080006c        0x0 ./main.o
+ .bss           0x0080006c        0x0 d:/embedded tools/02-avr tools/03-imt sdk/03- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .bss           0x0080006c        0x0 d:/embedded tools/02-avr tools/03-imt sdk/03- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+ .bss           0x0080006c        0x0 d:/embedded tools/02-avr tools/03-imt sdk/03- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+ *(.bss*)
+ .bss.EXTI_CallBack
+                0x0080006c        0x6 ./EXTI_program.o
+                0x0080006c                EXTI_CallBack
+ *(COMMON)
+                0x00800072                PROVIDE (__bss_end, .)
+                0x00001612                __data_load_start = LOADADDR (.data)
+                0x0000161e                __data_load_end = (__data_load_start + SIZEOF (.data))
+
+.noinit         0x00800072        0x0
+                0x00800072                PROVIDE (__noinit_start, .)
+ *(.noinit*)
+                0x00800072                PROVIDE (__noinit_end, .)
+                0x00800072                _end = .
+                0x00800072                PROVIDE (__heap_start, .)
+
+.eeprom         0x00810000        0x0
+ *(.eeprom*)
+                0x00810000                __eeprom_end = .
+
+.fuse
+ *(.fuse)
+ *(.lfuse)
+ *(.hfuse)
+ *(.efuse)
+
+.lock
+ *(.lock*)
+
+.signature
+ *(.signature*)
+
+.stab           0x00000000     0x1b48
+ *(.stab)
+ .stab          0x00000000      0xcc0 ./DIO_program.o
+ .stab          0x00000cc0      0x498 ./EXTI_program.o
+                                0x540 (size before relaxing)
+ .stab          0x00001158      0x144 ./GIE_program.o
+                                0x1ec (size before relaxing)
+ .stab          0x0000129c      0x24c ./LED_program.o
+                                0x318 (size before relaxing)
+ .stab          0x000014e8      0x42c ./SW_program.o
+                                0x4f8 (size before relaxing)
+ .stab          0x00001914      0x234 ./main.o
+                                0x330 (size before relaxing)
+
+.stabstr        0x00000000      0xdeb
+ *(.stabstr)
+ .stabstr       0x00000000      0xdeb ./DIO_program.o
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment
+ *(.comment)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges
+ *(.debug_aranges)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info
+ *(.debug_info)
+ *(.gnu.linkonce.wi.*)
+
+.debug_abbrev
+ *(.debug_abbrev)
+
+.debug_line
+ *(.debug_line)
+
+.debug_frame
+ *(.debug_frame)
+
+.debug_str
+ *(.debug_str)
+
+.debug_loc
+ *(.debug_loc)
+
+.debug_macinfo
+ *(.debug_macinfo)
+OUTPUT(LAB1_DIO_AVRIO.elf elf32-avr)
+LOAD linker stubs

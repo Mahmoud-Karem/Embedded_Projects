@@ -1,0 +1,9 @@
+MCAL/GPIO/GPIO.o MCAL/GPIO/GPIO.o: ../MCAL/GPIO/GPIO.c \
+  ../MCAL/GPIO/GPIO.h ../MCAL/GPIO/../MCAL_REGs.h \
+  ../MCAL/GPIO/../../LIB/STD.h
+
+../MCAL/GPIO/GPIO.h:
+
+../MCAL/GPIO/../MCAL_REGs.h:
+
+../MCAL/GPIO/../../LIB/STD.h:
